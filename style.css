@@ -29,7 +29,7 @@ header {
 .logo a {
     color: black;
     font-size: 1.4rem;
-    text-decoration: none   ;
+    text-decoration: none;
 }
 
 nav , nav ul , nav a{
@@ -43,3 +43,5 @@ nav , nav ul , nav a{
 }
 
 /* hero */
+
+
