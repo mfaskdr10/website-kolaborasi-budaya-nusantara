@@ -28,13 +28,18 @@ header {
 
 .logo a {
     color: black;
+    font-size: 1.4rem;
+    text-decoration: none   ;
 }
 
-nav , ul , a{
+nav , nav ul , nav a{
     display: flex;
     align-items: center;
     text-decoration: none;
     list-style-type: none;
     gap: 2rem;
     color: black;
+    font-size: 1.4rem;
 }
+
+/* hero */
