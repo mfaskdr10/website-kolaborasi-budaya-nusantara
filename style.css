@@ -1,5 +1,45 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* prepare */
+
+
+
+
+
+
+
+
+/* navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    background-color: aqua;
+}
+
+.logo a {
+    color: black;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+nav , nav ul , nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 2rem;
+    color: black;
+    font-size: 1.4rem;
+}
+
+/* hero */
