@@ -7,3 +7,34 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+/* prepare */
+
+
+
+
+
+
+
+
+/* navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    background-color: aqua;
+}
+
+.logo a {
+    color: black;
+}
+
+nav , ul , a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 2rem;
+    color: black;
+}
