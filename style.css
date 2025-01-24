@@ -103,6 +103,9 @@ i {
   display: none;
 }
 
+.nav__menu .nav__list .nav-icon {
+  display: none;
+}
 
 /* hero */
 
@@ -153,9 +156,16 @@ i {
     gap: 1rem;
   }
 
+  .nav__menu .nav__list .nav-icon {
+    display: block;
+  }
+
+  .navbar .nav__menu .nav__list .nav__link:hover {
+    color: var(--color-text-primary);
+  }
+
   .navbar .nav__menu .nav__list .nav__link {
     font-size: var(--font-size-lg);
     color: white;
   }
-
 }
