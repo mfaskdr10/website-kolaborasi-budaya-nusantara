@@ -255,10 +255,12 @@ i {
 .artikel .card-artikel {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1.5rem;
 }
 
 .card-artikel .card {
-  width: 25rem;
+  width: 27rem;
   border-radius: 15px;
   padding: 1.5rem;
   background-color: var(--color-red);
@@ -276,7 +278,6 @@ i {
 }
 
 .card-artikel .card .card-content {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
