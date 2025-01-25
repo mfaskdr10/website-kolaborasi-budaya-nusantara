@@ -6,6 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
 /* Reusable */
@@ -228,7 +229,7 @@ i {
 @media (max-width: 720px) {
   html {
     font-size: 80%;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .hamburger {
