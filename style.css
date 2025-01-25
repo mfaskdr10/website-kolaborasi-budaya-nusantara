@@ -6,9 +6,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
-  /* position: relative; */
-  /* width: 100%; */
 }
 
 /* Reusable */
@@ -196,6 +193,11 @@ i {
   color: white;
 }
 
+/* About */
+.about .container {
+  padding: 4rem 1rem;
+}
+
 /* responsif breakpoint */
 
 /* ipad */
@@ -232,6 +234,10 @@ i {
   html {
     font-size: 80%;
     overflow-x: hidden;
+  }
+
+  p {
+    font-size: 100%;
   }
 
   .hamburger {
@@ -284,5 +290,14 @@ i {
     width: 100%;
     height: 50vh;
     padding-left: 2rem;
+  }
+
+  .content-bawah {
+    flex-direction: column;
+  }
+
+  .content-kiri,
+  .content-kanan {
+    width: 100%;
   }
 }
