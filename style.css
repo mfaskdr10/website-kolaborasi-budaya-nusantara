@@ -130,7 +130,6 @@ i {
   line-height: 1.2;
   font-size: var(--font-size-5xl);
   color: var(--color-red);
-
 }
 
 .content-atas .title span {
@@ -145,10 +144,38 @@ i {
 
 .content-atas .title-content {
   height: 40vh;
-  padding: 25px;
+  padding-left: 32rem;
+  padding-top: 2rem;
+  padding-right: 1rem;
   border-radius: 15px;
-  background-color: var(--color-red);
+  background: linear-gradient(rgba(255, 239, 239, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/header-image.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position: cover;
+  /* filter: opacity(70%);   */
+  position: relative;
+  color: black;
+}
+
+.content-atas .title-content .learn-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5rem 2rem;
+  border: none;
   color: white;
+  background-color: var(--color-red);
+  border-radius: 15px;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  transition: all 0.2s;
+}
+
+.content-atas .title-content .learn-more:hover {
+  background-color: #e8182a;
 }
 
 .content-bawah {
@@ -156,7 +183,8 @@ i {
   gap: 1rem;
 }
 
-.content-kiri, .content-kanan {
+.content-kiri,
+.content-kanan {
   width: 60%;
   height: 40vh;
   border-radius: 15px;
@@ -168,7 +196,7 @@ i {
 /* responsif breakpoint */
 
 /* ipad */
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .navbar {
     padding: 2rem 2rem;
     width: 100%;
@@ -178,10 +206,29 @@ i {
   }
 }
 
+/* ipad vertikal */
+@media (max-width: 850px) {
+  .content-atas {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .content-atas .delimiter {
+    display: none;
+  }
+
+  .content-atas .title-content {
+    background-position: center;
+    height: 25vh;
+    padding-left: 25rem;
+  }
+}
+
 /* mobile */
 @media (max-width: 450px) {
   html {
     font-size: 80%;
+    overflow-x: hidden;
   }
 
   .hamburger {
@@ -202,6 +249,8 @@ i {
     padding: 30px;
     background-color: black;
     border-radius: 15px;
+    z-index: 999;
+    transition: all 0.5s;
   }
 
   .navbar .nav__menu.active {
@@ -226,5 +275,11 @@ i {
   .navbar .nav__menu .nav__list .nav__link {
     font-size: var(--font-size-lg);
     color: white;
+  }
+
+  .content-atas .title-content {
+    width: 100%;
+    height: 50vh;
+    padding-left: 2rem;
   }
 }
