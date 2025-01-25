@@ -10,26 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Reusable */
-.container {
-  padding: 1rem;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-i {
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-}
-
 /* Root */
 :root {
   /* Font Sizes */
@@ -71,7 +51,48 @@ i {
   --font-poppins: "Poppins", sans-serif;
 }
 
+/* Reusable */
+.container {
+  padding: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.desc {
+  color: var(--color-text-secondary);
+}
+
+.title-desc {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title-desc .title {
+  font-size: var(--font-size-4xl);
+}
+
 /* navbar */
+/* .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+} */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -130,7 +151,7 @@ i {
 .content-atas .title {
   flex: 1;
   line-height: 1.2;
-  font-size: var(--font-size-5xl);
+  font-size: 4rem;
   color: var(--color-red);
 }
 
@@ -154,8 +175,7 @@ i {
     url(../img/header-image.jpg);
   background-position: left;
   background-repeat: no-repeat;
-  background-position: cover;
-  /* filter: opacity(70%);   */
+  background-size: cover;
   position: relative;
   color: black;
 }
@@ -185,6 +205,15 @@ i {
   gap: 1rem;
 }
 
+.content-bawah .content-kiri {
+  background: linear-gradient(rgba(255, 239, 239, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/header-image1.avif);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-text-primary);
+}
+
 .content-kiri,
 .content-kanan {
   width: 60%;
@@ -196,12 +225,82 @@ i {
 }
 
 /* About */
-.about .container {
-  padding: 4rem 1rem;
+.section-container {
+  padding: 4rem 5rem;
 }
 
-.title-desc {
-  text-align: center;
+.about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.about .content .purpose-text p {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-primary);
+}
+
+.about .content .image {
+  border-radius: 15px;
+  mix-blend-mode: soft-light;
+}
+
+/* Artikel */
+.artikel {
+  padding-top: 0rem;
+  min-height: 100vh;
+}
+
+.artikel .card-artikel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-artikel .card {
+  width: 25rem;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background-color: var(--color-red);
+  color: white;
+}
+
+.card-artikel .card .card-image img {
+  width: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card-artikel .card .card-image img:hover {
+  transform: scale(1.1);
+}
+
+.card-artikel .card .card-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-artikel .card .card-content h3 {
+  font-size: var(--font-size-2xl);
+  margin: 1rem 0;
+}
+
+.card-artikel .card .card-content p {
+  font-size: var(--font-size-md);
+  margin-bottom: 2rem;
+}
+
+.card-artikel .card .card-content a {
+  padding: 1rem 2rem;
+  border: none;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  transition: all 0.2s;
+  /* margin-bottom: 2rem; */
 }
 
 /* responsif breakpoint */
@@ -219,6 +318,13 @@ i {
 
 /* ipad vertikal */
 @media (max-width: 850px) {
+  .section-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .content-atas {
     flex-direction: column;
     margin-top: 40px;
@@ -242,6 +348,28 @@ i {
   .content-kanan {
     width: 100%;
     height: 20vh;
+  }
+
+  .about {
+    padding: 4rem;
+  }
+
+  .about .content {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .about .content .purpose-text p {
+    text-align: center;
+  }
+
+  .artikel .card-artikel {
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+  }
+
+  .artikel .card-artikel .card {
+    width: 24.5rem;
   }
 }
 
@@ -315,5 +443,9 @@ i {
   .content-kiri,
   .content-kanan {
     width: 100%;
+  }
+
+  .artikel .card-artikel {
+    justify-content: center;
   }
 }
