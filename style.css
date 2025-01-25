@@ -229,7 +229,6 @@ i {
 @media (max-width: 720px) {
   html {
     font-size: 80%;
-    overflow-x: hidden;
   }
 
   .hamburger {
@@ -244,6 +243,7 @@ i {
   }
 
   .navbar .nav__menu {
+    overflow-x: visible;
     position: absolute;
     top: 5.5rem;
     right: -100rem;
