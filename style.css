@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 /* Reusable */
@@ -227,10 +227,6 @@ i {
 
 /* mobile */
 @media (max-width: 720px) {
-  body {
-    overflow-x: hidden;
-  }
-
   html {
     font-size: 80%;
   }
