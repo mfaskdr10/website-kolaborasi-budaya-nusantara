@@ -243,7 +243,7 @@ i {
   }
 
   .navbar .nav__menu {
-    overflow-x: visible;
+    overflow-x: hidden;
     position: absolute;
     top: 5.5rem;
     right: -100rem;
