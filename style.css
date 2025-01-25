@@ -227,9 +227,12 @@ i {
 
 /* mobile */
 @media (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+  }
+
   html {
     font-size: 80%;
-    overflow: hidden;
   }
 
   .hamburger {
