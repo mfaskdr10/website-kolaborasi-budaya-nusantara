@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Judul Artikel</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./img/bendera indonesia.webp"
+      type="image/webp"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="header container" id="header">
+      <nav
+        class="navbar"
+        id="navbar"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        <a href="#home" class="nav__logo"> Nusantara </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <i class="fa-solid fa-house-chimney nav-icon"></i>
+              <a class="nav__link" href="./index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <i class="fa-solid fa-circle-info nav-icon"></i>
+              <a class="nav__link" href="#about">About</a>
+            </li>
+            <li class="nav__item">
+              <i class="fa-solid fa-scroll nav-icon"></i>
+              <a class="nav__link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Konten Blog -->
+    <section class="blog blog-container">
+      <div class="title-desc">
+        <h2 class="title">Judul Blog</h2>
+        <p class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          voluptates.
+        </p>
+      </div>
+      <div class="content">
+        <img src="./img/header-image.jpg" alt="" width="100%">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          quidem atque quo. Magni, ullam omnis vero beatae praesentium, alias
+          sed vitae cum facilis quidem sint voluptate dolorum at? Non sapiente
+          nam modi, delectus incidunt dolorem maxime? Repellat est iusto earum,
+          corporis reiciendis libero eveniet dicta autem facilis tempora eaque.
+          Quae neque quo, laboriosam nemo dicta provident quidem ipsum minus
+          possimus odit, vitae aspernatur inventore architecto dignissimos
+          officiis. Fuga quaerat dignissimos sit rem nostrum nisi nulla minima
+          ratione asperiores, voluptatum omnis, laborum quia at numquam quos
+          debitis doloremque? Itaque similique omnis eos eveniet in. Accusamus
+          nulla voluptates, esse ducimus aspernatur repellendus.
+        </p>
+      </div>
+    </section>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

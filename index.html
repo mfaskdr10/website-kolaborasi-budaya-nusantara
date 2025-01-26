@@ -31,10 +31,18 @@
       href="./img/bendera indonesia.webp"
       type="image/webp"
     />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header container" id="header">
-      <nav class="navbar">
+      <nav
+        class="navbar"
+        id="navbar"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         <a href="#home" class="nav__logo"> Nusantara </a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
@@ -63,13 +71,19 @@
 
     <!-- Hero -->
     <section class="hero" id="home">
-      <div class="container hero-container">
+      <div class="container hero-container" id="hero-container">
         <div class="content-atas">
-          <h1 class="title">
+          <h1 class="title" data-aos="fade-down" data-aos-duration="1500">
             <span>Kolaborasi</span> Budaya <span>Nusantara</span>
           </h1>
-          <span class="delimiter">:</span>
-          <div class="title-content">
+          <span class="delimiter" data-aos="fade-up" data-aos-duration="1500"
+            >:</span
+          >
+          <div
+            class="title-content"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
               velit minima sunt officia dolorem placeat similique accusamus
@@ -82,7 +96,7 @@
             </a>
           </div>
         </div>
-        <div class="content-bawah">
+        <div class="content-bawah" data-aos="fade-up" data-aos-duration="1500">
           <div class="content-kiri">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
@@ -108,21 +122,27 @@
     <!-- About -->
     <section class="about section-container" id="about">
       <div class="title-desc">
-        <h1 class="title">Mengapa Kami membuat ini?</h1>
-        <p class="desc">
+        <h1 class="title" data-aos="fade-down" data-aos-duration="1500">
+          Mengapa Kami membuat ini?
+        </h1>
+        <p class="desc" data-aos="fade-up" data-aos-duration="1500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
           assumenda!
         </p>
       </div>
       <div class="content">
-        <div class="purpose-text">
+        <div
+          class="purpose-text"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quasi,
             sed eius quos sint ad enim inventore eligendi laudantium fugit vitae
             culpa commodi. Accusantium sed sint iusto amet tenetur optio.
           </p>
         </div>
-        <div class="image">
+        <div class="image" data-aos="fade-left" data-aos-duration="1500">
           <img src="./img/logo-garuda.avif" alt="logo-garuda" width="500" />
         </div>
       </div>
@@ -131,14 +151,16 @@
     <!-- Artikel -->
     <section class="artikel section-container" id="artikel">
       <div class="title-desc">
-        <h1 class="title">Artikel</h1>
-        <p class="desc">
+        <h1 class="title" data-aos="fade-down" data-aos-duration="1500">
+          Artikel
+        </h1>
+        <p class="desc" data-aos="fade-up" data-aos-duration="1500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
           assumenda!
         </p>
       </div>
       <div class="card-artikel">
-        <div class="card">
+        <div class="card" data-aos="fade-down" data-aos-duration="1500">
           <div class="card-image">
             <img src="./img/logo-garuda.avif" alt="logo-garuda" width="300" />
           </div>
@@ -148,10 +170,10 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Quisquam, quos.
             </p>
-            <a href="#" class="card-link">Read More</a>
+            <a href="./blog1.html" class="card-link">Read More</a>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-down" data-aos-duration="1500">
           <div class="card-image">
             <img src="./img/logo-garuda.avif" alt="logo-garuda" width="300" />
           </div>
@@ -170,15 +192,28 @@
     <!-- Nama Kelompok -->
     <section class="kelompok section-container" id="kelompok">
       <div class="title-desc">
-        <h1 class="title">Nama Kelompok</h1>
-        <p class="desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
-          assumenda!
+        <h1 class="title" data-aos="fade-down" data-aos-duration="1500">
+          Nama Kelompok
+        </h1>
+        <p class="desc" data-aos="fade-up" data-aos-duration="1500">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptatibus, assumenda!
         </p>
       </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+      <p>make with</p>
+    </footer>
+
     <!-- Script JS -->
     <script src="script.js"></script>
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
