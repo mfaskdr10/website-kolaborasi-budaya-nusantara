@@ -8,7 +8,7 @@
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  cursor:default;
+  cursor: default;
 }
 
 /* Root */
@@ -54,7 +54,7 @@ body {
 
 /* Reusable */
 .container {
-  padding: 1rem;
+  padding: 2rem 4rem;
 }
 
 ul {
@@ -94,7 +94,7 @@ i {
   padding: 1rem 2rem;
   background-color: black;
   border-radius: 50px;
-  transition: all 1s;
+  transition: all 2s;
 }
 
 .navbar.fixed {
@@ -105,6 +105,7 @@ i {
   z-index: 999;
   border-radius: 0;
   height: 6rem;
+  padding: 0 4rem;
 }
 
 .navbar .nav__logo {
@@ -136,7 +137,27 @@ i {
 }
 
 /* hero */
-.hero .container {
+.hero.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding-top: 0rem;
+  transition: all 1s;
+}
+
+.hero .content {
+  transition: all 1s;
+  max-width: 600px;
+}
+
+.hero .content .title {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+/* .hero .container {
   padding-top: 0rem;
   transition: all 1s;
 }
@@ -228,7 +249,7 @@ i {
   padding: 15px;
   background-color: var(--color-red);
   color: white;
-}
+} */
 
 /* About */
 .section-container {
@@ -373,6 +394,10 @@ i {
 
 /* mobile */
 @media (max-width: 720px) {
+  .container {
+    padding: 1rem;
+  }
+
   html {
     overflow-x: hidden;
   }
@@ -429,27 +454,20 @@ i {
   }
 
   /* Hero */
-  .content-atas .title {
-    text-align: center;
+  .content .title {
+    text-align: left;
     font-size: var(--font-size-4xl);
+    margin-top: 20px;
   }
 
-  .content-atas .title-content {
-    width: 100%;
-    height: 50vh;
-    padding-left: 2rem;
-  }
-
-  .content-bawah {
+  .hero.container {
     flex-direction: column;
   }
 
-  .content-kiri,
-  .content-kanan {
+  .hero .hero-img img{
     width: 100%;
   }
-
-  /* Anout */
+  /* About */
 
   .about .content .image img {
     width: 100%;
