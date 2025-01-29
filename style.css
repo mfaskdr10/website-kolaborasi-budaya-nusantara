@@ -454,27 +454,20 @@ i {
   }
 
   /* Hero */
-  .content-atas .title {
-    text-align: center;
+  .content .title {
+    text-align: left;
     font-size: var(--font-size-4xl);
+    margin-top: 20px;
   }
 
-  .content-atas .title-content {
-    width: 100%;
-    height: 50vh;
-    padding-left: 2rem;
-  }
-
-  .content-bawah {
+  .hero.container {
     flex-direction: column;
   }
 
-  .content-kiri,
-  .content-kanan {
+  .hero .hero-img img{
     width: 100%;
   }
-
-  /* Anout */
+  /* About */
 
   .about .content .image img {
     width: 100%;
