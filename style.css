@@ -260,7 +260,15 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 2rem;
+  background-color: rgb(248, 248, 248);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px var(--color-text-primary);
+}
+
+.about .content .title {
+  margin-bottom: 5px;
 }
 
 .about .content .purpose-text p {
@@ -268,9 +276,18 @@ i {
   color: var(--color-text-primary);
 }
 
+.about .content .purpose-text {
+  padding-left: 5rem;
+}
+
 .about .content .image {
   border-radius: 15px;
   mix-blend-mode: soft-light;
+}
+
+.about .content img {
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%);
 }
 
 /* Artikel */
