@@ -284,6 +284,12 @@ i {
   row-gap: 1rem;
 }
 
+.artikel .card-artikel .card-image img {
+  object-fit: cover;
+  background-size: cover;
+  box-shadow: 0px 0px 10px var(--color-text-primary);
+}
+
 .artikel .card-artikel .card {
   display: flex;
   align-items: center;
@@ -327,6 +333,10 @@ i {
   text-align: justify;
 }
 
+.blog .content h2 {
+  margin: 22px 0px 18px 0px;
+}
+
 /* responsif breakpoint */
 
 /* ipad */
@@ -337,6 +347,11 @@ i {
     height: 20px;
     background-color: black;
     border-radius: 50px;
+  }
+
+  /* blog */
+  .blog-container {
+    padding: 4rem 4rem;
   }
 }
 
@@ -389,6 +404,11 @@ i {
 
   .about .content .purpose-text p {
     text-align: center;
+  }
+
+  /* blog */
+  .blog-container {
+    padding: 4rem 4rem;
   }
 }
 
@@ -482,5 +502,14 @@ i {
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+  }
+
+  /* blog */
+  .blog-container {
+    padding: 4rem 2rem;
+  }
+
+  .blog .content p {
+    text-align: left;
   }
 }
