@@ -286,8 +286,16 @@ i {
 }
 
 .about .content img {
-  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%);
-  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%);
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 50%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 50%
+  );
 }
 
 /* Artikel */
@@ -354,6 +362,17 @@ i {
   margin: 22px 0px 18px 0px;
 }
 
+/* Footer */
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* responsif breakpoint */
 
 /* ipad */
@@ -364,6 +383,32 @@ i {
     height: 20px;
     background-color: black;
     border-radius: 50px;
+  }
+
+  /* About */
+  .about .content {
+    gap: 0rem;
+    padding: 50px;
+    flex-direction: column;
+  }
+
+  .about .content .purpose-text {
+    padding-left: 0;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .about .content img {
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 0%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 0%
+    );
   }
 
   /* blog */
@@ -380,6 +425,28 @@ i {
     padding-left: 1rem;
     padding-right: 1rem;
   } */
+
+  .about .content .purpose-text h1 {
+    text-align: center;
+  }
+
+  .about .content .purpose-text {
+    padding-left: 0;
+    padding: 40px;
+  }
+
+  .about .content img {
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 0%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 0%
+    );
+  }
 
   .content-atas {
     flex-direction: column;
@@ -501,10 +568,24 @@ i {
     flex-direction: column;
   }
 
-  .hero .hero-img img{
+  .hero .hero-img img {
     width: 100%;
   }
   /* About */
+
+  .about .content {
+    gap: 0rem;
+    padding: 0px;
+    flex-direction: column;
+  }
+
+  .about .content .purpose-text {
+    padding: 20px;
+  }
+
+  .about .content .purpose-text h1 {
+    margin-bottom: 40px;
+  }
 
   .about .content .image img {
     width: 100%;
