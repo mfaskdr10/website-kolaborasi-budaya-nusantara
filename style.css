@@ -362,6 +362,19 @@ i {
   margin: 22px 0px 18px 0px;
 }
 
+/* Kelompok */
+.kelompok .profile-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.profile-card .profile-content {
+  text-align: center;
+}
+
 /* Footer */
 footer {
   width: 100%;
@@ -388,7 +401,7 @@ footer {
   /* About */
   .about .content {
     gap: 0rem;
-    padding: 50px;
+    padding: 30px;
     flex-direction: column;
   }
 
@@ -415,6 +428,9 @@ footer {
   .blog-container {
     padding: 4rem 4rem;
   }
+
+  /* Artikel */
+
 }
 
 /* ipad vertikal */
@@ -425,6 +441,10 @@ footer {
     padding-left: 1rem;
     padding-right: 1rem;
   } */
+
+  .hero .hero-img img {
+    width: 95%;
+  }
 
   .about .content .purpose-text h1 {
     text-align: center;
@@ -437,15 +457,17 @@ footer {
 
   .about .content img {
     mask-image: linear-gradient(
-      to right,
+      to top,
       rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 1) 0%
+      rgba(0, 0, 0, 1) 50%
     );
-    -webkit-mask-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 1) 0%
+    --webkit-mask-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 50%
     );
+
+    border-radius: 40px;
   }
 
   .content-atas {
@@ -493,6 +515,10 @@ footer {
   /* blog */
   .blog-container {
     padding: 4rem 4rem;
+  }
+
+  .artikel {
+    padding-bottom: 5rem;
   }
 }
 
